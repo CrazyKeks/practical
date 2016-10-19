@@ -1,0 +1,109 @@
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+// font-family: 'Roboto', sans-serif;671180
+
+$cyan : #43c0c4; //
+$orangered: #ed554e;
+$smoke: #f3f3f3;
+
+
+/////////////////////////////////   font  //////////////////////////////////////////
+
+
+.font {
+
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-size: 18px;
+
+		&.l {
+			// Банковские гарантии 40px
+			font-weight: 300;
+			font-size: 40px;
+
+				&.f-s {
+					font-size: 23px;
+				}
+
+				&.f-xs {
+					font-size: 20px;
+
+					&.f-color {
+						color: $orangered;
+					}
+				}
+
+		}
+
+		&.b {
+			font-weight: 800;
+			font-size: 40px; 
+				&.f-s {
+					font-size: 24px;
+				}
+		}
+
+		&.m {
+			//меню 
+			font-weight: 600;
+			font-size: 16px;
+
+			&.f-s-b {
+				font-size: 40px;
+			}
+		}
+
+		&.r {
+			font-size: 40px;
+			font-weight: 400;
+
+			&.f-s {
+				font-size: 23px;
+			}
+		}
+
+
+
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////   background  //////////////////////////////////////////
+
+.background {
+
+	background: $smoke;
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////   space  //////////////////////////////////////////
+
+
+.m-all {
+	margin: 17px 0  17px  0;
+
+	&.b {
+		margin: 30px 0  0 30px;		
+	}
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+.logo {
+	width:334px;
+    height:57px;
+    background-image:url("assets/img/logo.png");
+    background-repeat: no-repeat;
+}
+
+.menu-text {
+	margin: 20px;
+}
+
