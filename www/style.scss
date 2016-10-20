@@ -83,13 +83,22 @@ $smoke: #f3f3f3;
 
 
 .m-all {
-	margin: 17px 0  17px  0;
-
-	&.b {
-		margin: 30px 0  0 30px;		
-	}
+	margin: 30px 0  45px  0;
+		&.def {
+			margin: 45px 0 45px 0;
+		}
+		&.block {
+			margin:100px 0 100px 0;
+		}
 }
 
+.menu-header {
+	margin: 18px 0 45px 0;
+}
+
+.title-header {
+    padding: 100px 0 60px 0;
+}
 
 
 
@@ -107,3 +116,49 @@ $smoke: #f3f3f3;
 	margin: 20px;
 }
 
+
+ul {
+	margin: 20px 0 0 45px;
+	padding: 0;
+	list-style-image: url("assets/img/checbox.png"); /* Путь к изображению маркера */
+}
+
+.icon-header {
+    position: relative;
+    top: -9px;
+    left: 15px;
+}
+
+
+.previev {
+	padding: 40px 30px 40px 30px;
+}
+
+.teacher {
+	background-image:url("assets/img/banner_people.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    max-width: 100%;
+    height: 700px;
+    display:block;
+    background-position: right;
+}
+
+.icon {
+
+    width: 106px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #43c0c4;
+    padding: 10px;
+    border-radius: 70%;
+
+	&.client {
+		background-image:url("assets/img/icons/user-blue.png");
+	}
+
+	&.agent {
+		background-image:url("assets/img/icons/agent-blue.png");
+	}
+}
