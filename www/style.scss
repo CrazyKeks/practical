@@ -75,6 +75,10 @@ $smoke: #f3f3f3;
 
 	background: $smoke;
 
+	&.w {
+		background-color: white;
+	}
+
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -150,15 +154,232 @@ ul {
     height: 100px;
     background-position: center;
     background-repeat: no-repeat;
-    border: 1px solid #43c0c4;
+    border: 2px solid #43c0c4;
     padding: 10px;
     border-radius: 70%;
 
 	&.client {
 		background-image:url("assets/img/icons/user-blue.png");
+		cursor:pointer;
 	}
 
 	&.agent {
+		margin-left: 30px;
 		background-image:url("assets/img/icons/agent-blue.png");
+		cursor:pointer;
+	}
+	&.agent:hover {
+		background-image:url("assets/img/icons/agent-white.png");
+		cursor:pointer;
+		background-color: $cyan;
+	}
+	&.client:hover {
+		background-image:url("assets/img/icons/user-white.png");
+		cursor:pointer;
+		background-color: $cyan;
+	}
+
+}
+
+.arrow {
+   &.arrow-right {
+		visibility: hidden;
+		top: 74px;
+		width: 10%;
+	    height: 120px;
+	    background-repeat: no-repeat;
+		background-image:url("assets/img/arrow-right.png");
+	}
+   &.arrow-left {
+		visibility: hidden;
+	    top: 74px;
+		width: 10%;
+	    height: 120px;
+	    background-repeat: no-repeat;
+		background-image:url("assets/img/arrow.png");
+	}
+	
+}
+
+
+.shadow {
+	-webkit-box-shadow: inset 0px 0px 43px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 43px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 43px 0px rgba(0,0,0,0.75);
+}
+
+
+.text {
+    margin-top: 10px;
+	&.ag {
+	    margin-left: 75px;
+	}
+	&.cl {
+	    margin-left: 20px;
 	}
 }
+
+.btn-primary {
+    padding: 14px 40px;
+    margin-top: 50px;
+	@include button-variant(white, $orangered, $orangered);
+}
+
+.text-info {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #000;
+	font-size: 20px;
+    line-height: 1.7;
+
+		&.color {
+			color: $orangered;
+		}
+		&.b {
+			font-weight: 400;
+		}
+		&.quote {
+			font-size: 16px;
+		}
+}
+
+
+fieldset { 
+    display: table;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 4px $cyan !important;
+}
+
+
+.border-text {
+	height: 5px;
+	width: 70px;
+	padding-top: 10px;
+	border-bottom: 3px solid $orangered;
+}
+
+.my-col {
+    display: inline-block;
+}
+
+.box {
+	margin: 0px 0px 15px;
+	background-position: center;
+
+	 &.ml {
+ 		background-image:url("assets/img/icons/2milions.png");
+		background-repeat: no-repeat;
+		height: 90px;
+	 }
+	 &.year {
+ 		background-image:url("assets/img/icons/3_god.png");
+		background-repeat: no-repeat;
+		height: 90px;
+	 }
+	 &.proc {
+		background-image:url("assets/img/icons/45percent.png");
+		background-repeat: no-repeat;
+		height: 90px;
+	 }
+	 &.pain {
+ 		background-image:url("assets/img/icons/umbrella.png");
+		background-repeat: no-repeat;
+		height: 90px;
+	 }
+	 &.seif {
+ 		background-image:url("assets/img/icons/safe.png");
+		background-repeat: no-repeat;
+		height: 90px;
+		background-position: 65% 0;
+	 }
+	 &.rim {
+	 	background-image:url("assets/img/icons/build.png");
+	 	background-repeat: no-repeat;
+	 	height: 90px;
+	 	background-position: 65% 0;
+	 }
+	 &.russia {
+	 	background-image:url("assets/img/icons/country.png");
+	 	background-repeat: no-repeat;
+	 	height: 90px;
+	 }
+	 &.day {
+	 	background-image:url("assets/img/icons/1_day.png");
+	 	background-repeat: no-repeat;
+	 	height: 90px;
+	 }
+}
+
+.box-padding {
+	padding: 50px 5px;
+	     &.r-b {
+	     	border-right: 1px solid $smoke;
+	     	border-bottom: 1px solid $smoke;
+	     }
+	     &.r {
+	     	border-right: 1px solid $smoke;
+	     }
+	     &.b {
+	     	border-bottom: 1px solid $smoke;
+	     }
+}
+
+
+.box-agent {
+	margin: 0px 0px 26px;
+	background-position: center;
+
+	 &.idea {
+ 		background-image:url("assets/img/icons/idea.png");
+		background-repeat: no-repeat;
+		height: 100px;
+		background-size:contain;
+
+	 }
+	 &.time {
+ 		background-image:url("assets/img/icons/time.png");
+		background-repeat: no-repeat;
+		height: 100px;
+		background-size:contain;
+
+	 }
+	 &.doc {
+ 		background-image:url("assets/img/icons/doc_check.png");
+		background-repeat: no-repeat;
+		height: 100px;
+		background-size:contain;
+
+	 }
+	 &.money {
+ 		background-image:url("assets/img/icons/money.png");
+		background-repeat: no-repeat;
+		height: 100px;
+		background-size:contain;
+
+	 }
+}
+
+.box-padding-agent {
+	padding-bottom: 50px;
+	     &.r-b {
+	     	border-right: 1px solid $smoke;
+	     	border-bottom: 1px solid $smoke;
+	     }
+	     &.r {
+	     	border-right: 1px solid $smoke;
+	     }
+	     &.b {
+	     	border-bottom: 1px solid $smoke;
+	     }
+}
+
+.p-t {
+	padding-top: 50px;
+
+}
+

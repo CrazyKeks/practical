@@ -5845,6 +5845,8 @@ button.close {
 
 .background {
   background: #f3f3f3; }
+  .background.w {
+    background-color: white; }
 
 .m-all {
   margin: 30px 0  45px  0; }
@@ -5896,10 +5898,205 @@ ul {
   height: 100px;
   background-position: center;
   background-repeat: no-repeat;
-  border: 1px solid #43c0c4;
+  border: 2px solid #43c0c4;
   padding: 10px;
   border-radius: 70%; }
   .icon.client {
-    background-image: url("assets/img/icons/user-blue.png"); }
+    background-image: url("assets/img/icons/user-blue.png");
+    cursor: pointer; }
   .icon.agent {
-    background-image: url("assets/img/icons/agent-blue.png"); }
+    margin-left: 30px;
+    background-image: url("assets/img/icons/agent-blue.png");
+    cursor: pointer; }
+  .icon.agent:hover {
+    background-image: url("assets/img/icons/agent-white.png");
+    cursor: pointer;
+    background-color: #43c0c4; }
+  .icon.client:hover {
+    background-image: url("assets/img/icons/user-white.png");
+    cursor: pointer;
+    background-color: #43c0c4; }
+
+.arrow.arrow-right {
+  visibility: hidden;
+  top: 74px;
+  width: 10%;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-image: url("assets/img/arrow-right.png"); }
+
+.arrow.arrow-left {
+  visibility: hidden;
+  top: 74px;
+  width: 10%;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-image: url("assets/img/arrow.png"); }
+
+.shadow {
+  -webkit-box-shadow: inset 0px 0px 43px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 43px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 43px 0px rgba(0, 0, 0, 0.75); }
+
+.text {
+  margin-top: 10px; }
+  .text.ag {
+    margin-left: 75px; }
+  .text.cl {
+    margin-left: 20px; }
+
+.btn-primary {
+  padding: 14px 40px;
+  margin-top: 50px;
+  color: white;
+  background-color: #ed554e;
+  border-color: #ed554e; }
+  .btn-primary:focus, .btn-primary.focus {
+    color: white;
+    background-color: #e82920;
+    border-color: #aa1811; }
+  .btn-primary:hover {
+    color: white;
+    background-color: #e82920;
+    border-color: #e62117; }
+  .btn-primary:active, .btn-primary.active,
+  .open > .btn-primary.dropdown-toggle {
+    color: white;
+    background-color: #e82920;
+    border-color: #e62117; }
+    .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
+    .open > .btn-primary.dropdown-toggle:hover,
+    .open > .btn-primary.dropdown-toggle:focus,
+    .open > .btn-primary.dropdown-toggle.focus {
+      color: white;
+      background-color: #cf1d15;
+      border-color: #aa1811; }
+  .btn-primary:active, .btn-primary.active,
+  .open > .btn-primary.dropdown-toggle {
+    background-image: none; }
+  .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus,
+  fieldset[disabled] .btn-primary:hover,
+  fieldset[disabled] .btn-primary:focus,
+  fieldset[disabled] .btn-primary.focus {
+    background-color: #ed554e;
+    border-color: #ed554e; }
+  .btn-primary .badge {
+    color: #ed554e;
+    background-color: white; }
+
+.text-info {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #000;
+  font-size: 20px;
+  line-height: 1.7; }
+  .text-info.color {
+    color: #ed554e; }
+  .text-info.b {
+    font-weight: 400; }
+  .text-info.quote {
+    font-size: 16px; }
+
+fieldset {
+  display: table;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 4px #43c0c4 !important; }
+
+.border-text {
+  height: 5px;
+  width: 70px;
+  padding-top: 10px;
+  border-bottom: 3px solid #ed554e; }
+
+.my-col {
+  display: inline-block; }
+
+.box {
+  margin: 0px 0px 15px;
+  background-position: center; }
+  .box.ml {
+    background-image: url("assets/img/icons/2milions.png");
+    background-repeat: no-repeat;
+    height: 90px; }
+  .box.year {
+    background-image: url("assets/img/icons/3_god.png");
+    background-repeat: no-repeat;
+    height: 90px; }
+  .box.proc {
+    background-image: url("assets/img/icons/45percent.png");
+    background-repeat: no-repeat;
+    height: 90px; }
+  .box.pain {
+    background-image: url("assets/img/icons/umbrella.png");
+    background-repeat: no-repeat;
+    height: 90px; }
+  .box.seif {
+    background-image: url("assets/img/icons/safe.png");
+    background-repeat: no-repeat;
+    height: 90px;
+    background-position: 65% 0; }
+  .box.rim {
+    background-image: url("assets/img/icons/build.png");
+    background-repeat: no-repeat;
+    height: 90px;
+    background-position: 65% 0; }
+  .box.russia {
+    background-image: url("assets/img/icons/country.png");
+    background-repeat: no-repeat;
+    height: 90px; }
+  .box.day {
+    background-image: url("assets/img/icons/1_day.png");
+    background-repeat: no-repeat;
+    height: 90px; }
+
+.box-padding {
+  padding: 50px 5px; }
+  .box-padding.r-b {
+    border-right: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3; }
+  .box-padding.r {
+    border-right: 1px solid #f3f3f3; }
+  .box-padding.b {
+    border-bottom: 1px solid #f3f3f3; }
+
+.box-agent {
+  margin: 0px 0px 26px;
+  background-position: center; }
+  .box-agent.idea {
+    background-image: url("assets/img/icons/idea.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    background-size: contain; }
+  .box-agent.time {
+    background-image: url("assets/img/icons/time.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    background-size: contain; }
+  .box-agent.doc {
+    background-image: url("assets/img/icons/doc_check.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    background-size: contain; }
+  .box-agent.money {
+    background-image: url("assets/img/icons/money.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    background-size: contain; }
+
+.box-padding-agent {
+  padding-bottom: 50px; }
+  .box-padding-agent.r-b {
+    border-right: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3; }
+  .box-padding-agent.r {
+    border-right: 1px solid #f3f3f3; }
+  .box-padding-agent.b {
+    border-bottom: 1px solid #f3f3f3; }
+
+.p-t {
+  padding-top: 50px; }
